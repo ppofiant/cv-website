@@ -1,5 +1,9 @@
 .container-portfolio {
-  margin: 100px auto;
+  padding: 150px auto;
+  background: url(../assets/keyboard-background.png);
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .portfolio {
@@ -25,6 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2%;
 }
 
 .portfolio .btn-port a {
@@ -56,6 +61,9 @@
 }
 
 @media only screen and (max-width: 400px) {
+  .container-portfolio {
+    padding-bottom: 20px;
+  }
   .portfolio-title p {
     font-size: 30px;
   }

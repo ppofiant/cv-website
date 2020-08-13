@@ -9,16 +9,23 @@ body {
   line-height: 1.2;
 }
 
+.wrapper-home {
+  background-image: url(../assets/keyboard-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .container-home {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80%;
-  margin: auto;
+  margin: 0px auto;
+  z-index: 2;
 }
 
 .greet {
-  color: grey;
+  color: white;
   font-size: 16px;
   letter-spacing: 1px;
 }
@@ -39,7 +46,7 @@ body {
 
 .job {
   font-weight: bold;
-  color: grey;
+  color: black;
 }
 
 .desc {
@@ -47,7 +54,7 @@ body {
 }
 
 .cv_btn {
-  color: #ffb900;
+  color: black;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   position: absolute;
@@ -64,6 +71,7 @@ body {
   height: 500px;
   width: 500px;
   transition: all 0.3s ease;
+  filter: brightness(1.1) contrast(0.9);
 }
 
 .footer {
@@ -99,6 +107,9 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
+  .wrapper-home {
+    padding-top: 40px;
+  }
   .container-home {
     margin-top: 10%;
     flex-direction: column;
