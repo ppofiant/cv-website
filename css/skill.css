@@ -1,0 +1,158 @@
+.container-skill {
+  margin: 50px auto;
+  width: 80%;
+}
+
+.container-box {
+  max-width: 100%;
+}
+
+.skill {
+  margin: auto;
+  background: #ffffff;
+}
+
+.skill-title {
+  margin: 50px 0px;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.skill-title p {
+  font-size: 40px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.category-skill {
+  margin: 30px 10px;
+}
+
+.category-skill p {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.container-category-skill::-webkit-scrollbar {
+  display: none;
+}
+
+.container-category-skill {
+  max-width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -ms-overflow-style: none; /*Internet Explorer or Edge*/
+  scrollbar-width: none; /* Firefox*/
+}
+
+.box {
+  width: 250px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #ffffff;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 0px 10px;
+}
+
+.box .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.box .percent svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.box .percent svg circle:nth-child(1) {
+  stroke-dasharray: 0;
+  stroke: #ffffff;
+}
+
+.box .percent svg .circle-per {
+  stroke-dashoffset: 0;
+  stroke: rgba(250, 203, 75, 1);
+}
+
+.box .percent svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.box .percent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999999;
+}
+
+.box .percent .number h2 {
+  font-size: 34px;
+}
+
+.box .percent .number h2 span {
+  font-size: 20px;
+}
+
+.box .text {
+  color: #999;
+  font-weight: bold;
+  padding: 25px 0 0;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.note-skill {
+  text-align: right;
+  right: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .skill-title p {
+    font-size: 30px;
+  }
+
+  .note-skill p {
+    font-size: 12px;
+  }
+
+  .category-skill p {
+    font-size: 20px;
+  }
+
+  .container-category-skill {
+    max-width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .container-category-skill .box {
+    width: 160px;
+    height: 240px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+}

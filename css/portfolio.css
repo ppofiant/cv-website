@@ -1,0 +1,80 @@
+.container-portfolio {
+  margin: 100px auto;
+}
+
+.portfolio {
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.portfolio .portfolio-title {
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 20px 0px;
+  margin: 20px 0px;
+  letter-spacing: 2px;
+}
+
+.portfolio .port-desc {
+  margin: 0px 0px 50px 0px;
+}
+
+.portfolio .btn-port {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .btn-port a {
+  padding: 15px 40px 5px 40px;
+  border: none;
+  background: #ffb900;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.05s ease-in;
+  box-shadow: 0 9px 5px #999;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+
+.portfolio .btn-port a:active {
+  transform: translateY(4px);
+  box-shadow: 0 3px 5px #999;
+}
+
+.portfolio .btn-port p {
+  font-size: 22px;
+}
+
+.portfolio .btn-port img {
+  width: 40px;
+  height: 40px;
+  filter: invert();
+}
+
+@media only screen and (max-width: 400px) {
+  .portfolio-title p {
+    font-size: 30px;
+  }
+
+  .port-desc p {
+    font-size: 14px;
+  }
+
+  .btn-port {
+    padding: 5px 20px 1px 20px;
+    margin: auto;
+  }
+
+  .portfolio .btn-port p {
+    font-size: 14px;
+  }
+
+  .portfolio .btn-port img {
+    width: 20px;
+    height: 20px;
+  }
+}
