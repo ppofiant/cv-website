@@ -265,14 +265,14 @@
 
                 <div class="form-email">
                     <div>
-                        <input type="text" id="first-name" name="first-name" placeholder="First Name">
-                        <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+                        <input type="text" id="first-name" name="first-name" onkeyup="validateName()" placeholder="First Name">
+                        <input type="text" id="last-name" name="last-name" onkeyup="validateName()" placeholder="Last Name">
                     </div>
-                    <input type="text" id="phone-num" name="phone-num" placeholder="Phone Number">
-                    <input type="text" id="email" name="email" placeholder="Email">
+                    <input type="text" id="phone-num" name="phone-num" onkeyup="validatePhoneNum()" placeholder="+62 ...">
+                    <input type="text" id="email" name="email" onkeyup="validateEmail()" placeholder="Email">
                     <textarea name="message" id="message" cols="30" rows="8" placeholder="Message"></textarea>
                     <div class="button-form">
-                        <button class="button-success pure-button button-xlarge">
+                        <button onclick="validateAll()" class="button-success pure-button button-xlarge">
                             <i class="fa fa-paper-plane"></i>&nbsp;Send
                         </button>
                     </div>
@@ -295,6 +295,8 @@
 
         <div class="copyright"><p>Copyright &copy;2020 All Right Reserved.</p></div>
     </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
 
     <script>
         $(document).ready(function() {
