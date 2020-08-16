@@ -55,17 +55,29 @@ body {
 }
 
 .cv_btn {
-  color: white;
-  text-decoration: none;
   transition: all 0.2s ease-in-out;
-  position: absolute;
   font-size: 18px;
   letter-spacing: 1px;
+  background-color: #ffb900;
+  padding: 8px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
 }
 
 .cv_btn:hover {
   font-weight: bold;
   font-size: 20px;
+}
+
+.logo-contact {
+  margin-top: 100px;
+}
+
+.logo-contact img {
+  width: 40px;
+  filter: invert();
+  margin: 0px 5px;
 }
 
 .picture img {
@@ -115,6 +127,10 @@ body {
     margin-top: 10%;
     flex-direction: column;
   }
+
+  .logo-contact {
+    margin-top: 50px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -140,6 +156,10 @@ body {
 
   .cv_btn:hover {
     font-size: 16px;
+  }
+
+  .logo-contact {
+    margin-top: 30px;
   }
 
   .picture img {
