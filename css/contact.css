@@ -44,11 +44,11 @@
 }
 
 #first-name {
-  margin-right: 1px;
+  margin-right: 0.5px;
 }
 
 #last-name {
-  margin-left: 1px;
+  margin-left: 0.5px;
 }
 
 .form-email input {
@@ -113,11 +113,11 @@
   }
 
   #first-name {
-    margin-right: 2px;
+    margin-right: 1px;
   }
 
   #last-name {
-    margin-left: 2px;
+    margin-left: 1px;
   }
 }
 

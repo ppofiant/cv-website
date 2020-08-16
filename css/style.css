@@ -13,6 +13,7 @@ body {
   background-image: url(../assets/keyboard-background.png);
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
 }
 
 .container-home {
@@ -46,7 +47,7 @@ body {
 
 .job {
   font-weight: bold;
-  color: black;
+  color: white;
 }
 
 .desc {
@@ -54,7 +55,7 @@ body {
 }
 
 .cv_btn {
-  color: black;
+  color: white;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   position: absolute;

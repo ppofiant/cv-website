@@ -1,9 +1,11 @@
+
+
 .container-portfolio {
   padding: 150px auto;
-  background: url(../assets/keyboard-background.png);
   background-size: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 90px;
 }
 
 .portfolio {
