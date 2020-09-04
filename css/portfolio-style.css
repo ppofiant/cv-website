@@ -27,20 +27,20 @@
   margin: 50px 0px;
 }
 
-
 .container {
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin: 50px auto;
+  overflow: scroll;
+  padding: 20px;
 }
 
 .container a {
   text-decoration: none;
   color: inherit;
 }
-
 
 .box {
   text-align: center;
@@ -84,7 +84,6 @@
   color: white;
 }
 
-
 @media only screen and (max-width: 900px) {
   .wrapper-port {
     margin: 50px 0px;
@@ -104,9 +103,8 @@
   .box h1 {
     font-size: 18px;
   }
-  
+
   .box p {
     font-size: 12px;
   }
-
 }
