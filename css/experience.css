@@ -25,13 +25,15 @@
   display: flex;
   padding: 20px 0px;
   max-height: 400px;
-  overflow: scroll;
-  -ms-overflow-style: none; /*Internet Explorer or Edge*/
-  scrollbar-width: none; /* Firefox*/
+  overflow-y: scroll;
 }
 
 .experience .container-timeline::-webkit-scrollbar {
-  display: none; /* Google Chrome */
+  width: 10px;
+}
+
+.experience .container-timeline::-webkit-scrollbar-thumb {
+  background: white;
 }
 
 .experience .container-timeline .timeline {
@@ -83,15 +85,13 @@
     font-size: 40px;
   }
 
-  .container-timeline::-webkit-scrollbar {
-    display: none; /* Google Chrome */
+  .container-timeline::-webkit-scrollbar-thumb {
+    background: white;
   }
 
   .container-timeline {
     max-height: 500px;
     overflow-y: scroll;
-    -ms-overflow-style: none; /*Internet Explorer or Edge*/
-    scrollbar-width: none; /* Firefox*/
   }
 
   .timeline::before {
