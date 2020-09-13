@@ -61,7 +61,6 @@
   margin: 0px 10px;
 }
 
-
 .box .box-image img {
   width: 190px;
   height: 170px;
@@ -87,6 +86,11 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .container-skill {
+    margin: 50px auto;
+    width: 90%;
+  }
+
   .skill-title p {
     font-size: 30px;
   }
@@ -113,5 +117,4 @@
   .text {
     font-size: 18px;
   }
-
 }

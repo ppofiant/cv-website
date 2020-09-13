@@ -43,6 +43,15 @@
   transition: all 0.2s ease-in-out;
 }
 
+.menu-wrapper .hamburger > .scrolled {
+  background-color: #000;
+}
+
+.menu-wrapper .hamburger > .scrolled::before,
+.menu-wrapper .hamburger > .scrolled::after {
+  background-color: #000;
+}
+
 /* Make Line Up and Down Hamburger */
 .menu-wrapper .hamburger > div::before,
 .menu-wrapper .hamburger > div::after {
