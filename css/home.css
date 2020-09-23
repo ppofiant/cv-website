@@ -9,8 +9,8 @@ body {
 }
 
 .welcome__web {
-  width: 60%;
-  height: 60%;
+  width: 1000px;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,19 @@ body {
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
+  animation: imganim 0.5s infinite linear both;
+  animation-iteration-count: 1;
+}
+
+@keyframes imganim {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .welcome {
@@ -45,6 +57,7 @@ body {
   border-radius: 10px;
   display: block;
   text-align: center;
+  transition: transform 0.1s linear;
 }
 
 .welcome p a:hover {
@@ -57,6 +70,13 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
+  .welcome__web {
+    width: 50%;
+    height: 50%;
+    min-height: auto;
+    min-width: auto;
+  }
+
   .welcome p#title {
     font-size: 40px;
   }
