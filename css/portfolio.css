@@ -1,4 +1,8 @@
-
+.button__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .container-portfolio {
   padding: 150px auto;
@@ -32,6 +36,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 2%;
+  margin: auto 15px;
 }
 
 .portfolio .btn-port a {

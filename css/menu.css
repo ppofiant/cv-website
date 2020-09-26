@@ -76,7 +76,7 @@
 }
 
 .menu-wrapper .toggler:hover + .hamburger > div {
-  background-color: white;
+  background-color: black;
 }
 
 /* Make Animation hamburger */
