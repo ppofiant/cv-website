@@ -35,7 +35,7 @@ function validatePhoneNum() {
   var text = phone.value;
   var pat = "+62";
 
-  if (!(pat == text.substring(0, 3))) {
+  if (!(pat == text.substring(0, 3)) || text.length <= 8) {
     validPhone = "false";
   } else {
     validPhone = "true";
