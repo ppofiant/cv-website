@@ -61,4 +61,4 @@ setInterval(() => {
   } else {
     btn.style.display = "none";
   }
-}, 500);
+});
